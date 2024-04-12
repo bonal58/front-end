@@ -1,0 +1,125 @@
+// Variabelen
+$primary-color: #333;
+$secondary-color: #fff;
+$base-font-size: 16px;
+$base-padding: 1rem;
+$border-radius: 5px;
+
+// Gebruik maken van genestelde elementen
+header {
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: $base-padding;
+
+  h1 {
+    margin: 0;
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+
+      li {
+        margin-right: 1rem;
+
+        a {
+          color: $secondary-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+// Maak op minimaal 3 verschillende manieren gebruik van de &
+.btn-primary {
+  background-color: blue;
+  color: white;
+}
+
+.btn.secondary {
+  background-color: gray;
+  color: black;
+}
+
+.btn:hover {
+  background-color: lightblue;
+}
+
+// Maak gebruik van een namespace
+$font-namespace: 'font';
+$background-namespace: 'bg';
+$margin-namespace: 'm';
+
+.#{$font-namespace}-heading {
+  font-size: 24px;
+}
+
+.#{$background-namespace}-primary {
+  background-color: $primary-color;
+}
+
+.#{$margin-namespace}-top {
+  margin-top: 1rem;
+}
+
+// Operations
+section {
+  padding: $base-padding * 2;
+}
+
+// @media queries
+@media (max-width: 768px) {
+  header {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+  }
+}
+
+// Maak gebruik van @extend
+// Geen voorbeelden van @extend in deze Sass/SCSS-code
+
+// Maak gebruik van @if, @elseif en @else
+$theme: dark;
+
+body {
+  @if $theme == 'dark' {
+    background-color: #333;
+    color: #fff;
+  } @else {
+    background-color: #fff;
+    color: #333;
+  }
+}
+
+// Maak gebruik van @for
+@for $i from 1 through 3 {
+  .column-#{$i} {
+    width: 100px * $i;
+  }
+}
+
+// Maak gebruik van @each
+$colors: blue, red, green;
+
+@each $color in $colors {
+  .color-#{$color} {
+    background-color: $color;
+  }
+}
+
+// Maak gebruik van @while
+$x: 6;
+
+@while $x > 0 {
+  .element-#{$x} {
+    width: 20px * $x;
+  }
+  $x: $x - 2;
+}
