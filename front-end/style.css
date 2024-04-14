@@ -18,36 +18,85 @@ header nav ul li a {
   text-decoration: none;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  padding: 1rem;
-}
-main section article {
-  background-color: white;
-  padding: 1rem;
-}
-main section article h2 {
-  margin-bottom: 0.5rem;
+.btn-primary {
+  background-color: blue;
+  color: white;
 }
 
-footer {
+.btn.secondary {
+  background-color: gray;
+  color: black;
+}
+
+.btn:hover {
+  background-color: lightblue;
+}
+
+.font-heading {
+  font-size: 24px;
+}
+
+.bg-primary {
   background-color: #333;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
+}
+
+.m-top {
+  margin-top: 1rem;
+}
+
+section {
+  padding: 2rem;
 }
 
 @media (max-width: 768px) {
-  main {
-    grid-template-columns: 1fr;
+  header {
+    padding: 0.5rem;
   }
 }
 @media (max-width: 1024px) {
-  nav ul {
+  nav {
     flex-direction: column;
   }
+}
+body {
+  background-color: #333;
+  color: #fff;
+}
+
+.column-1 {
+  width: 100px;
+}
+
+.column-2 {
+  width: 200px;
+}
+
+.column-3 {
+  width: 300px;
+}
+
+.color-blue {
+  background-color: blue;
+}
+
+.color-red {
+  background-color: red;
+}
+
+.color-green {
+  background-color: green;
+}
+
+.element-6 {
+  width: 120px;
+}
+
+.element-4 {
+  width: 80px;
+}
+
+.element-2 {
+  width: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
