@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+/* Namespace*/
+nav {
+  background: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: grey;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+
+nav .logo {
+  color: #0a0a0a;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: black;
+  background: white;
+}
+
+nav .menu-btn i {
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+/* Foto's */
+.Berkay {
+  width: 15%;
+  height: 20%;
+  margin-left: 7%;
+  margin-top: 90px;
+}
+
+.Linkedin {
+  width: 15%;
+  height: 20%;
+  margin-left: 7%;
+  margin-top: 20px;
+}
+
+.Github {
+  width: 15%;
+  height: 20%;
+  margin-left: -15%;
+  margin-bottom: -17%;
+}
+
+.JS {
+  width: 10%;
+  margin-top: 10%;
+  margin-left: 10%;
+  float: left;
+}
+
+.Html {
+  width: 20%;
+  margin-top: 23%;
+  margin-left: -18%;
+}
+
+/* Buttons */
+button,
+.Contact {
+  color: beige;
+  background-color: black;
+  color: white;
+  border: 3px;
+  font-weight: 500;
+  padding: 13px 30px;
+  border-radius: 10px;
+  transition: 0.4s;
+  margin-left: 20px;
+}
+
+.main {
+  height: 100px;
+  width: 100px;
+}
+
+.Text {
+  margin-left: 25%;
+  margin-top: -15%;
+}
+
+.SectionContact {
+  margin-top: -3%;
+  margin-left: 25%;
+}
+
+.Skills {
+  margin-left: 30%;
+  margin-top: -15%;
+}
+
+/*Telefoon*/
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 0 30px 0 50px;
+  }
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  nav .menu-btn i {
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+  #click:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #111;
+    text-align: center;
+  }
+  nav ul li {
+    width: 100%;
+    margin: 30px 0;
+  }
+  nav ul li a {
+    width: 100%;
+    margin-left: 0;
+  }
+  .Text {
+    margin-left: 10%;
+    margin-top: 0%;
+  }
+  .SectionContact {
+    margin-left: 10%;
+    margin-top: 15%;
+  }
+  .Berkay,
+  .Linkedin,
+  .Github {
+    width: 30%;
+    margin-left: 25%;
+    margin-top: 2%;
+  }
+  .Html {
+    width: 40%;
+    margin-top: 53%;
+    margin-left: -30%;
+  }
+  .JS {
+    width: 20%;
+    margin-bottom: 30%;
+    margin-left: 10%;
+    float: left;
+  }
+  .Skills {
+    margin-left: 30%;
+    margin-top: -35%;
+  }
+}
+/* Telefoon normaal*/
+@media screen and (max-width: 200px) and (orientation: landscape) {
+  nav {
+    padding: 0 20px 0 30px;
+  }
+  nav ul {
+    position: fixed;
+    top: 100%;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  nav .menu-btn i {
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+  #click:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #111;
+    text-align: center;
+  }
+  nav ul li {
+    width: 100%;
+    margin: 20px 0;
+  }
+  nav ul li a {
+    width: 100%;
+    margin-left: 0;
+  }
+  .Text {
+    margin-left: 5%;
+    margin-top: -10%;
+  }
+  .SectionContact {
+    margin-left: 20%;
+  }
+  .Berkay,
+  .Linkedin,
+  .Github {
+    width: 1%;
+    margin-left: 10%;
+    margin-top: -2%;
+  }
+  .Html {
+    width: 20%;
+    margin-top: 33%;
+    margin-left: -38%;
+  }
+  .JS {
+    width: 10%;
+    margin-top: 30%;
+    margin-left: 30%;
+    float: left;
+  }
+  .Skills {
+    margin-left: 50%;
+    margin-top: -45%;
+    margin-bottom: 0px;
+  }
+}
+/* Footer */
+footer {
+  display: grid;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  height: 10%;
+  bottom: 0;
+}
+
+body {
+  background-color: rgb(248, 248, 247);
+  background-repeat: no-repeat;
+  font-size: larger;
+}
+
+/*# sourceMappingURL=style.css.map */
