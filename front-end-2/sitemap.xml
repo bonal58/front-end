@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://localhost:5500/sitemap.html</loc>
+        <lastmod>2024-04-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>http://localhost:5500/index.html</loc>
+        <lastmod>2024-04-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>http://localhost:5500/Contact.html</loc>
+        <lastmod>2024-04-16</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>http://localhost:5500/Skills.html</loc>
+        <lastmod>2024-04-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+</urlset>
